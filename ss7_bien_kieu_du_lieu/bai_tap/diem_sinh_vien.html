@@ -12,7 +12,19 @@
 <button onclick="tong()">clickme </button>
 <h3 id="result">tổng là: </h3>
 <h3 id="result1">trung bình là: </h3>
-<script src="../bai_tap/diem_sinh_vien.js"></script>
+<script >
+    function tong() {
+        let diemToan= +document.getElementById("diemtoan").value;
+        let diemHoa= +document.getElementById("diemhoa").value;
+        let diemSinh= +document.getElementById("diemsinh").value;
+        let tBinh= (diemToan+ diemSinh+diemHoa)/3;
+        let tong1= (diemToan+ diemSinh+diemHoa);
+        document.getElementById("result").innerHTML=`tổng: `+tong1;
+        document.getElementById("result1").innerHTML=`tb: `+tBinh;
+
+    }
+
+</script>
 <!--cách 1 không dùng html-->
 <!--<script>-->
 <!--   //  let diemToan= +prompt("nhập điểm toán");-->
