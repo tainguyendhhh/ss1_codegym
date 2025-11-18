@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>diện tích hình tròn</title>
 </head>
 <body>
-$END$
+<input id="radius" placeholder="nhập bán kính">
+<button onclick="area()">clickme</button>
+<h3 id="result">diện tích: </h3>
+<h3 id="result1">chu vi: </h3>
+<script>
+    function area() {
+        let radius = document.getElementById("radius").value;
+        let area = 3.14 * radius * radius;
+        let circuit = 2 * 3.14 * radius;
+        document.getElementById("result1").innerHTML = "chu vi: " + circuit;
+        document.getElementById("result").innerHTML = "diện tích: " + area;
+    }
+</script>
 </body>
 </html>
