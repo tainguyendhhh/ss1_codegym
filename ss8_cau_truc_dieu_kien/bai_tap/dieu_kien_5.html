@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp loại sinh viên</title>
+</head>
+<body>
+<input type="number"placeholder="điểm kiểm tra"min="0"id="kiemTra">
+<input type="number"placeholder="điểm giữa kỳ"min="0"id="giuaKy">
+<input type="number"placeholder="điểm cuối kỳ"min="0"id="cuoiKy">
+<button onclick="myFunction()">check</button>
+<h3 id="result">kết quả</h3>
+<script>
+    function myFunction() {
+        let kiemTra=Number(document.getElementById("kiemTra").value);
+        let giuaKy=Number(document.getElementById("giuaKy").value);
+        let cuoiKy=Number(document.getElementById("cuoiKy").value);
+        let diemTong= 0.2*kiemTra+0.3*giuaKy+0.5*cuoiKy;
+        if(diemTong<5){
+            document.getElementById("result").innerText= "kém" +diemTong;
+        }else if(diemTong<=6.5){
+            document.getElementById("result").innerText= "trung bình" +diemTong;
+        }else if(diemTong<=8){
+            document.getElementById("result").innerText= "khá" +diemTong;
+        }else {
+            document.getElementById("result").innerText= "giỏi" +diemTong;
+        }
+    }
+</script>
+</body>
+</html>
