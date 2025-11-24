@@ -2,24 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>kiểm tra số nguyên</title>
+    <title>giá trị lớn nhất của 3 số</title>
 </head>
 <body>
-<input type="number"placeholder="nhập số a"id="number">
-<button onclick="checkNumber()">check</button>
+<input id="number1"placeholder="nhập số thứ nhất">
+<input id="number2"placeholder="nhập số thứ hai">
+<input id="number3"placeholder="nhập số thứ ba">
+<button onclick="myFunction()">check</button>
+<br>
 <h3 id="result">kết quả</h3>
 <script>
-    function checkNumber(){
-        let number= document.getElementById("number").value;
-        if(number>0){
-            document.getElementById("result").innerText= "a là số dương";
-
-        }else if(number==0){
-            document.getElementById("result").innerText= "a = 0";
-        }else{
-            document.getElementById("result").innerText= "a là số âm";
+    function myFunction() {
+        let number1 = Number(document.getElementById("number1").value);
+        let number2 = Number(document.getElementById("number2").value);
+        let number3 = Number(document.getElementById("number3").value);
+        if (number1 > number2 && number1>number3) {
+                document.getElementById("result").innerText = "số lớn nhất là: " + number1;
+        }else if (number2 > number3) {
+            document.getElementById("result").innerText = "số lớn nhất là: " + number2;
+        }else {
+            document.getElementById("result").innerText = "số lớn nhất là: " + number3;
         }
     }
+
 </script>
 </body>
 </html>
