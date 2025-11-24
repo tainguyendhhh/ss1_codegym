@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính hoa hồng</title>
+</head>
+<body>
+<input id="doanhSo" placeholder="nhập doanh số" type="number" min="0">
+<button onclick="myFunction()">tính</button>
+<h3 id="result">kết quả</h3>
+<script>
+    function myFunction() {
+        let doanhSo = document.getElementById("doanhSo").value;
+
+        let hoaHong = 0;
+        if (doanhSo < 10) {
+            hoaHong = doanhSo * 0.1;
+            document.getElementById("result").innerText = "hoa hồng là: " + hoaHong;
+        } else if (doanhSo < 100) {
+            hoaHong = doanhSo * 0.15;
+            document.getElementById("result").innerText = "hoa hồng là: " + hoaHong;
+        } else if (doanhSo < 1000) {
+            hoaHong = doanhSo * 0.2;
+            document.getElementById("result").innerText = "hoa hồng là: " + hoaHong;
+        } else {
+            hoaHong = doanhSo * 0.3;
+            document.getElementById("result").innerText = "hoa hồng là: " + hoaHong;
+        }
+
+    }
+</script>
+</body>
+</html>
