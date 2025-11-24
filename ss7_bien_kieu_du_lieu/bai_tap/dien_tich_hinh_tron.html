@@ -12,8 +12,8 @@
 <script>
     function area() {
         let radius = document.getElementById("radius").value;
-        let area = 3.14 * radius * radius;
-        let circuit = 2 * 3.14 * radius;
+        let area = Math.round(3.14 * radius * radius);
+        let circuit = (2 * 3.14 * radius).toFixed(3);
         document.getElementById("result1").innerHTML = "chu vi: " + circuit;
         document.getElementById("result").innerHTML = "diện tích: " + area;
     }

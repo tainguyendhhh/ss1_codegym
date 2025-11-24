@@ -19,22 +19,22 @@
     <option>Vnd</option>
 </select><br>
 <input type="button" value="doitien"
-       onclick="doitien()">
+       onclick="doiTien()">
 <h3 id="result">kết quả: </h3>
 <script>
-    function doitien() {
+    function doiTien() {
         let amount = document.getElementById("amount").value;
         let from = document.getElementById("from").value;
         let to = document.getElementById("to").value;
-        let ketqua;
+        let ketQua;
         if (from === "Vnd" && to === "Usd") {
-            ketqua = amount / 25;
+            ketQua = amount / 25;
         } else if (from === "Usd" && to === "Vnd") {
-            ketqua = amount * 25;
+            ketQua = amount * 25;
         } else {
-            ketqua = amount;
+            ketQua = amount;
         }
-        document.getElementById("result").innerHTML = "kết quả là: " + ketqua;
+        document.getElementById("result").innerHTML = "kết quả là: " + ketQua;
     }
 </script>
 </body>
