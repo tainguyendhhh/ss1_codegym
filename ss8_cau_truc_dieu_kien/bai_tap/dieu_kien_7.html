@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cước điện thoại</title>
+</head>
+<body>
+<script>
+    let soPhutGoi = Number(prompt("nhập số phút gọi"));
+    let soTinNhan = Number(prompt("nhập số tin nhắn"));
+    let tongCuoc = 0;
+    if (soPhutGoi < 50) {
+        tongCuoc = soPhutGoi * 100 + soTinNhan * 200;
+    } else if (soPhutGoi < 100) {
+        tongCuoc = soPhutGoi * 150 + soTinNhan * 200;
+    } else {
+        tongCuoc = soPhutGoi * 200 + soTinNhan * 200;
+    }
+    alert("tổng cước là: " + tongCuoc);
+</script>
+</body>
+</html>
