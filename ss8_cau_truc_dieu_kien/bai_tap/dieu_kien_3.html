@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra số nguyên</title>
+</head>
+<body>
+<input type="number"placeholder="nhập số a"id="number">
+<button onclick="checkNumber()">check</button>
+<h3 id="result">kết quả</h3>
+<script>
+    function checkNumber(){
+        let number= document.getElementById("number").value;
+        if(number>0){
+            document.getElementById("result").innerText= "a là số dương";
+
+        }else if(number==0){
+            document.getElementById("result").innerText= "a = 0";
+        }else{
+            document.getElementById("result").innerText= "a là số âm";
+        }
+    }
+</script>
+</body>
+</html>
