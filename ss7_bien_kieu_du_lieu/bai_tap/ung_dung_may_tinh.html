@@ -7,30 +7,30 @@
 <body>
 <input type="number"id="nuber1"placeholder="nhập số 1" step="0.01">
 <input type="number"id="nuber2"placeholder="nhập số 2">
-<button onclick="phepcong()">Cộng</button>
-<button onclick="pheptru()">trừ</button>
-<button onclick="phepnhan()">Nhân</button>
-<button onclick="phepchia()">Chia</button>
+<button onclick="phepCong()">Cộng</button>
+<button onclick="phepTru()">trừ</button>
+<button onclick="phepNhan()">Nhân</button>
+<button onclick="phepChia()">Chia</button>
 <h3 id="result">kết quả: </h3>
 <script>
-  function phepcong() {
+  function phepCong() {
     let number1= +document.getElementById("nuber1").value;
     let number2= +document.getElementById("nuber2").value;
     let tong= (number1+number2);
     document.getElementById("result").innerHTML = "kết quả : " + tong;
   }
-  function pheptru() {
+  function phepTru() {
     let number1= +document.getElementById("nuber1").value;
     let number2= +document.getElementById("nuber2").value;
     let hieu= (number1-number2);
     document.getElementById("result").innerHTML = "kết quả : " + hieu;
   }
-  function phepnhan() {
+  function phepNhan() {
     let number1= document.getElementById("nuber1").value;
     let number2= document.getElementById("nuber2").value;
     let tich= (number1*number2);
     document.getElementById("result").innerHTML = "kết quả : " + tich;
-  } function phepchia() {
+  } function phepChia() {
     let number1= document.getElementById("nuber1").value;
     let number2= document.getElementById("nuber2").value;
     let chia= (number1/number2);
