@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi xất ngân hàng</title>
+</head>
+<body>
+<input id="loan" placeholder="nhập số tiền gốc">
+<input id="rate" placeholder="nhập lãi suất hàng tháng">
+<input id="monthly" placeholder="nhập số tháng vay">
+<button onclick="interestRate()">clickme</button>
+<br>
+<br>
+<h3 id="result">số tiền phải trả: </h3>
+<script>
+    function interestRate() {
+        let tienGoc = parseFloat(document.getElementById("loan").value);
+        let laiSuatPhanTram = parseFloat(document.getElementById("rate").value);
+        let month = parseFloat(document.getElementById("monthly").value);
+        let tongTra = 0;
+        if (isNaN(tienGoc) || isNaN(laiSuatPhanTram) || isNaN(month)) {
+            document.getElementById("result").innerText = "bạn nhập không hợp lệ"
+        } else if (tienGoc === 0) {
+            document.getElementById("result").innerText = "bạn đã không vay " + tongTra;
+        } else if (laiSuatPhanTram === 0) {
+            tongTra = tienGoc;
+            document.getElementById("result").innerText = "số tiền phải trả là: " + tongTra;
+        } else {
+            let laiSuat = laiSuatPhanTram / 100;
+            tongTra = tienGoc * Math.pow((laiSuat + 1), month);
+            document.getElementById("result").innerText = "số tiền phải trả là: " + tongTra;
+
+        }
+
+    }
+</script>
+</body>
+</html>
