@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập cá nhân giựa vào thu nhập</title>
+</head>
+<body>
+<input id="income" type="number" placeholder="hãy điền  thu nhập của bạn">
+<button onclick="taxIncome()">clickMe</button>
+<br>
+<br>
+<h3 id="result">kết quả:</h3>
+<script>
+    function taxIncome() {
+        let tax = 0;
+        let income = document.getElementById("income").value;
+        if (income <= 0) {
+            document.getElementById("result").innerText = "bạn đang nợ?";
+        } else if (income < 10) {
+            document.getElementById("result").innerText = "bạn không cần dóng thuế thu nhập đâu";
+        } else if (income < 100) {
+            tax = income * 8 / 100;
+            document.getElementById("result").innerText = "thuế thu nhập của bạn là: " + tax +" triệu";
+        } else {
+            tax = income * 15 / 100;
+            document.getElementById("result").innerText = "thuế thu nhập của bạn là: " + tax +" triệu";
+
+        }
+
+    }
+</script>
+</body>
+</html>
