@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính diện tích hình chữ nhật</title>
+</head>
+<body>
+<script>
+    let chieuDai = parseFloat(prompt("nhập cạnh dài"));
+    let chieuRong = parseFloat(prompt("nhập cạnh ngắn"));
+    if (chieuDai <= 0 || chieuRong <= 0) {
+        alert("bạn nhập không đúng");
+    } else {
+        let dienTich = chieuDai * chieuRong;
+        alert("diện tích hình chữ nhật là: " + dienTich);
+    }
+</script>
+</body>
+</html>
