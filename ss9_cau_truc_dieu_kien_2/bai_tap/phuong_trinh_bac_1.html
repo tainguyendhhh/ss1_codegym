@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải phương trình ax+b=0</title>
+</head>
+<body>
+<script>
+    let heSo = parseFloat(prompt("nhập hệ số"));
+    let hangSo = parseFloat(prompt("nhập hằng số"));
+    if (heSo === 0) {
+        alert("đây không phải phương trình bậc nhất");
+    } else {
+        let nghiem = -hangSo / heSo;
+        alert("phương trình có nghiệm x = " + nghiem);
+    }
+</script>
+</body>
+</html>
