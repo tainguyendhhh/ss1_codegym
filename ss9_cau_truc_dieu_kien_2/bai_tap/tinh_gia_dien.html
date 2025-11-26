@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giá điện</title>
+</head>
+<body>
+<script>
+    let soDien = parseFloat(prompt("nhập số điện:"));
+    let tienDien = 0;
+    if (soDien <= 0) {
+        alert("bạn nhập không đúng");
+    } else if (soDien < 100) {
+        tienDien = soDien * 1.5;
+        alert(tienDien);
+    } else if (soDien < 200) {
+        tienDien = (soDien - 100) * 2.5 + 150;
+        alert(tienDien);
+    } else {
+        tienDien = (soDien - 200) * 3.5 + 250 + 150;
+        alert(tienDien);
+    }
+</script>
+
+
+</body>
+</html>
