@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bfb8a34-2e61-42c5-8b95-e8d4241052f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/phuong_trinh_bac_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dien_tich_tam_giac.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ductai.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../main.txt" beforeDir="false" />
@@ -31,7 +31,6 @@
       <change beforePath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien/thuc_hanh/cau_truc_switch_case.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien/thuc_hanh/dang_nhap-he-thong.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss8_cau_truc_dieu_kien/thuc_hanh/toan_tu_3_ngoi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1764072971171</updated>
       <workItem from="1764072972295" duration="7420000" />
-      <workItem from="1764158514720" duration="7536000" />
+      <workItem from="1764158514720" duration="7922000" />
     </task>
     <servers />
   </component>

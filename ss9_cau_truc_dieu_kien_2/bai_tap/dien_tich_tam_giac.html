@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính diện tích tam giác</title>
+</head>
+<body>
+<script>
+    let canh1 = parseFloat(prompt("nhập cạnh góc vuông thứ 1"));
+    let canh2 = parseFloat(prompt("nhập cạnh góc vuông thứ 2"));
+    if (canh1 <= 0 || canh2 <= 0) {
+        alert("bạn nhập không đúng");
+    } else {
+        let dienTich = canh1 * canh2 / 2;
+        alert("diện tích cảu tam giác là: " + dienTich);
+    }
+
+</script>
+</body>
+</html>
