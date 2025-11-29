@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = 0;
+    let soLuongSNT = 0;
+    while (soLuongSNT < 10) {
+        let soLuongUoc = 0;
+        for (let i = 0; i <= number; i++) {
+            if (number % i === 0) {
+                soLuongUoc++;
+            }
+        }
+        if (soLuongUoc === 2) {
+            document.write(number + "<br>");
+            soLuongSNT++;
+        }
+
+        number++;
+    }
+
+</script>
+</body>
+</html>
