@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm số chia hết cho 5</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let n = 2;
+    for (; ;) {
+        let fn = f0 + f1;
+        f0 = f1;
+        f1 = fn;
+        if (fn % 5 === 0) {
+            document.write(fn);
+            break;
+        }
+        n++;
+    }
+</script>
+</body>
+</html>
