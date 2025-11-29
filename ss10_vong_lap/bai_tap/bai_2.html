@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập nhiệt độ để yêu cầu tăng hoặc giảm nhiệt độ theo yêu cầu</title>
+</head>
+<body>
+<script>
+    let nhietDo = parseFloat(prompt("hãy nhập nhiệt độ hiện tại"));
+    while (nhietDo >= 100 || nhietDo < 20) {
+        if (nhietDo < 20) {
+            alert("hãy tămg nhiệt độ xuống");
+        } else if (nhietDo >= 100) {
+            alert("giảm");
+        }
+    }
+
+</script>
+</body>
+</html>
