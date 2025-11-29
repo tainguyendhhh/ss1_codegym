@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bảng cửu chương</title>
+</head>
+<body>
+<form>
+    <table border="1px" style="width:100%">
+        <script>
+            for (let j = 1; j <= 10; j++) {
+                for (let i = 1; i <= 9; i++) {
+                    let tich = i * j;
+                    document.write("<td>" + i + "x" + j + "=" + tich + "</td>");
+                }
+                document.write("<tr></tr>");
+            }
+
+        </script>
+    </table>
+</form>
+</body>
+</html>
