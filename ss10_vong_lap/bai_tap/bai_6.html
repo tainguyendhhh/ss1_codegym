@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng của 30 số chia hết cho 7 đầu tiên trong dãy số tự nhiên</title>
+</head>
+<body>
+<script>
+    let soLuongSCHC7 = 1;
+    let i = 8;
+    let total = 7;
+    while (soLuongSCHC7 < 30) {
+        if (i % 7 === 0) {
+            soLuongSCHC7++;
+            total += i;
+        }
+        i++;
+    }
+    document.write(total);
+</script>
+</body>
+</html>

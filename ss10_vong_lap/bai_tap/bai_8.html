@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game đoán số</title>
+</head>
+<body>
+<button onclick="myFunction()">chơi game</button>
+<script>
+    function myFunction() {
+        let min = +prompt("nhập số bé nhất");
+        let max = +prompt("nhập số lớn nhất");
+        let random = Math.floor(Math.random() * (max - min) + min);
+        alert(random);
+        for (let i = 1; i <= 3; i++) {
+            let number = +prompt("nhập số dự đoán của bạn lần:" + i);
+            if (random === number) {
+                alert("chức mừng bạn đã đóa đúng");
+                break;
+            } else if (random > number) {
+                alert("số của bạn bé hơn");
+            } else {
+                alert("số của bạn lớn hơn");
+            }
+            if (i === 3) {
+                alert("bạn đã hết lượt đoán");
+                break;
+            }
+
+        }
+
+    }
+</script>
+</body>
+</html>
