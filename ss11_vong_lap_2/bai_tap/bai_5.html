@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi ngân hàng khi biết số tiền vay, số tháng vay và lãi suất ngân hàng</title>
+</head>
+<body>
+<script>
+  let soTienVay = parseFloat(prompt("nhập số tiền bạn đã vay"));
+  let laiSuat = parseFloat(prompt("nhập lãi suất hàng tháng của bạn"));
+  let soThang = parseInt(prompt("nhập số tháng bạn vay"));
+  let tienPhaiTra = soTienVay;
+  for(let i = 1; i <= soThang; i++ ){
+    tienPhaiTra = soTienVay*(1+laiSuat)**i;
+  }
+  document.write(tienPhaiTra);
+</script>
+</body>
+</html>
