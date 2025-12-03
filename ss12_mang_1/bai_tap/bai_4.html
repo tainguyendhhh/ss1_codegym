@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược thứ tự trong mảng</title>
+</head>
+<body>
+<script>
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    let firt = 0;
+    let last = 14;
+    while (firt < last) {
+        let x = array[firt];
+        array[firt] = array[last];
+        array[last] = x;
+        firt++;
+        last--;
+    }
+    document.write(array);
+</script>
+</body>
+</html>

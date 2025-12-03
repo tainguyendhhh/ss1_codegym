@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị lớn nhất trong mảng in ra giá trị đó và vị trí của nó</title>
+</head>
+<body>
+<script>
+    let array = [2, 3, 56, 77, 98, 54, 36, 26, 13, 46, 24, 31, 23, 1054, 3, 1, 45];
+    let max = array[0];
+    let index = 0;
+    for (let i = 1; i <= array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i;
+        }
+    }
+    document.write("giá trị lớn nhất là: " + max + " tại vị trí: " + index);
+</script>
+</body>
+</html>

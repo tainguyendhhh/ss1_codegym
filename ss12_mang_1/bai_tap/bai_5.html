@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính số nguyên âm trong mảng</title>
+</head>
+<body>
+<input id="number" placeholder="nhập các phần tử của mảng">
+<button onclick="addNumber()">add</button>
+<button onclick="check()">check</button>
+<h3 id="result">kết quả:</h3>
+<script>
+    let array = Array();
+
+    function addNumber() {
+        let number = document.getElementById("number").value;
+        array.push(number);
+        document.getElementById("number").value = "";
+    }
+
+    function check() {
+        let soLuongSNA = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] < 0 && array[i] % 1 === 0) {
+                soLuongSNA++;
+            }
+        }
+        document.getElementById("result").innerHTML = "số lượng số nguyên âm là: " + soLuongSNA + "mảng gồm có" + array;
+    }
+</script>
+</body>
+</html>

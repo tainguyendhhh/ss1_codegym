@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm số lớn nhất và tính giá trị trung bình</title>
+</head>
+<body>
+<script>
+    let array = [9, 5, 67, 88, 55, 66, 89, 234, 5];
+    let max = 9;
+    let total = 9;
+    let trungBinh = 9;
+    for (let i = 1; i < array.length; i++) {
+        total += array[i];
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    trungBinh = total / array.length;
+    document.write("số lớn nhất là: " + max + " giá trị trung bình là: " + trungBinh);
+</script>
+</body>
+</html>
