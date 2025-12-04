@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài số 7 của mảng 1</title>
+</head>
+<body>
+<script>
+    let arr = Array();
+    for (let i = 0; i < 10; i++) {
+        arr.push(prompt("nhập vào phần tử thứ " + i));
+    }
+    let v = +prompt("nhập vào số v");
+    let index = -1;
+    for (let i = 0; i < 10; i++) {
+        if (arr[i] == v) {
+            index = i;
+        }
+    }
+    if (index != -1) {
+        arr.splice(index, 1);
+        arr.push(0);
+        alert(arr);
+    }
+</script>
+</body>
+</html>

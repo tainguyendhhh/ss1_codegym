@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8 của mảng 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr.push(prompt(" nhập phần tử thứ " + i));
+    }
+    arr.sort(function (a, b) {
+        return b - a
+    })
+    alert(arr);
+</script>
+</body>
+</html>
